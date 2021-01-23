@@ -1,0 +1,55 @@
+Program to find Intersection, Union, and Difference of two sets in Python
+
+A={1,2,3,4,5}
+B={1,3,9, 12}
+
+print('Set A:\t\t\t',A)
+print('Set B:\t\t\t',B)
+
+C = A & B
+print('\nA intersection B:\t',C)
+D = A.union(B)
+print('A union B: \t\t',D)
+E = A - B
+print('A difference B:\t\t',E)
+
+
+F1 = C.issubset(A)
+print('\n\n Is A intersection B a subset of A:',F1)
+F2 = C.issubset(B)
+print('\n Is A intersection B a subset of B:',F2)
+
+F3 = D.issubset(A)
+print('\n\n Is A union B a subset of A:',F3)
+F4 = D.issubset(B)
+print('\n Is A union B a subset of B:',F4)
+
+
+F5 = E.issubset(A)
+print('\n\n Is A difference B a subset of A:',F5)
+F6 = E.issubset(B)
+print('\n Is A difference B a subset of B:',F6)
+
+
+output 
+Set A:			 {1, 2, 3, 4, 5}
+Set B:			 {1, 3, 12, 9}
+
+A intersection B:	 {1, 3}
+A union B: 		 {1, 2, 3, 4, 5, 9, 12}
+A difference B:		 {2, 4, 5}
+
+
+ Is A intersection B a subset of A: True
+
+ Is A intersection B a subset of B: True
+
+
+ Is A union B a subset of A: False
+
+ Is A union B a subset of B: False
+
+
+ Is A difference B a subset of A: True
+
+ Is A difference B a subset of B: False
