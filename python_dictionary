@@ -1,0 +1,43 @@
+D={'a':0,'b':1,'c':2, 'd':'a'}
+print('D:', D)
+
+x = 'a' in D
+print('\nis a in the dictionary?:',x)
+
+x = 'e' in D
+print('is e in the dictionary?:',x)
+
+print('\nvalue of a: ',D['a'])
+
+D["e"] = 'mama'
+print('\nadding e = mama')
+del(D['a'])
+print('deleting a')
+
+print('\nnew D:',D)
+
+
+x = 'a' in D
+print('\nis a in the dictionary?:',x)
+x = 'e' in D
+print('is e in the dictionary?:',x)
+
+print('\nvalue of e: ',D['e'])
+
+Output:
+D: {'a': 0, 'b': 1, 'c': 2, 'd': 'a'}
+
+is a in the dictionary?: True
+is e in the dictionary?: False
+
+value of a:  0
+
+adding e = mama
+deleting a
+
+new D: {'b': 1, 'c': 2, 'd': 'a', 'e': 'mama'}
+
+is a in the dictionary?: False
+is e in the dictionary?: True
+
+value of e:  mama
